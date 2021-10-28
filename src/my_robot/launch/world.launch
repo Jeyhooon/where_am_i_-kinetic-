@@ -25,8 +25,18 @@
     </include>
 
     <!-- Spawn My Robot -->
-    <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
+    <node name="urdf_spawner_robot" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
           args="-urdf -param robot_description -model my_robot
                 -x $(arg x) -y $(arg y) -z $(arg z)
                 -R $(arg roll) -P $(arg pitch) -Y $(arg yaw)"/>
+
+    <!-- Spawn Box -->
+    <node name="urdf_spawner_box" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
+    args="-file $(find my_robot)/urdf/box.xacro -urdf -model my_box
+          -x 2 -y $(arg y) -z $(arg z)
+          -R $(arg roll) -P $(arg pitch) -Y $(arg yaw)"/>
+
+    <!--launch rviz-->
+    <node name="rviz" pkg="rviz" type="rviz" respawn="false"/>
+
 </launch>
