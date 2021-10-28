@@ -2,7 +2,8 @@
 
 <robot name="my_robot"
     xmlns:xacro="http://www.ros.org/wiki/xacro">
-    <xacro:include filename="$(find my_robot)/urdf/my_robot.gazebo" />
+    
+    <xacro:include filename="$(find my_robot)/urdf/my_robot.gazebo"/>
 
     <link name="robot_footprint"></link>
 
@@ -121,7 +122,7 @@
         </visual>
     </link>
 
-    <joint type="continuous" name="left_wheel_hing">
+    <joint type="continuous" name="left_wheel_hinge">
         <origin xyz="0 0.15 0" rpy="0 0 0"/>
         <parent link="chassis"/>
         <child link="left_wheel"/>
@@ -130,7 +131,7 @@
         <dynamics damping="1.0" friction="1.0"/>
     </joint>
 
-    <joint type="continuous" name="right_wheel_hing">
+    <joint type="continuous" name="right_wheel_hinge">
         <origin xyz="0 -0.15 0" rpy="0 0 0"/>
         <parent link="chassis"/>
         <child link="right_wheel"/>
