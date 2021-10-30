@@ -46,7 +46,7 @@ void process_image_callback(const sensor_msgs::Image img)
     {
     case 0:
         // left
-        lin_x = 0.2;
+        lin_x = 0.0;
         ang_z = 0.2;
         break;
     case 1:
@@ -55,7 +55,7 @@ void process_image_callback(const sensor_msgs::Image img)
         break;
     case 2:
         // right
-        lin_x = 0.2;
+        lin_x = 0.0;
         ang_z = -0.2;
         break;
     }
