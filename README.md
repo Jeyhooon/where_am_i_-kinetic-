@@ -57,3 +57,5 @@ The robot consist of differential drive (to drive the two wheels), a lidar (hoku
 - `source devel/setup.bash`
 - Run `roslaunch my_robot world.launch` (this only lunches the world and the robot)
 - Open and source new terminal then run `roslaunch ball_chaser ball_chaser.launch` (this launches the nodes for processing the image and driving the robot)
+- Configure the RViz to visualize the robot, camera and lidar sensors.
+- Now drag the white ball to the front of the robot so that it's visible with the camera; robot then should move towards the white ball!
