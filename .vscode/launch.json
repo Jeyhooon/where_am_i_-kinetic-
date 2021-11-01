@@ -1,0 +1,10 @@
+{
+  "configurations": [
+    {
+      "name": "ROS: Launch",
+      "type": "ros",
+      "request": "launch",
+      "target": "/home/mak5rt/git/chase_it_ws/src/ball_chaser/launch/ball_chaser.launch"
+    }
+  ]
+}
