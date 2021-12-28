@@ -1,6 +1,7 @@
 # where_am_i
 
-Udacity's SW Engineer Course - Third Project: Where am I!
+Udacity's Robotic SW Engineer Course - Third Project: Where am I!
+
 The project is about localizing a mobile robot in a gazebo world using [AMCL](http://wiki.ros.org/amcl) package (pre-defined map created from the world file). It consist of three packages: `my_robot` (creating the robot and the world), `pgm_map_creator` (to create a static map from the `.world` file), and `teleop_twist_keyboard` (for controlling the robot using keyboard).
 
 Initial guess for robot location is (0, 0) by moving the robot around it updates its beliefs based on the laser scan and odometry data to localize itself in the environment. As shown in the figure below it's able to find it's position accurately!
